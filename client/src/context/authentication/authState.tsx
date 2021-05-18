@@ -33,7 +33,6 @@ const AuthState = (props:any) => {
         try {
 
             const response = await clientAxios.post('/api/user', data);
-            console.log(response.data);
 
             dispatch({
                 type: REGISTER_SUCCESS,
