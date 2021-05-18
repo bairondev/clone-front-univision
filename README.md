@@ -70,7 +70,7 @@ __RegisterComponent /__
 
 <img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/register.png" width="300" />
 
-Página que permite registrar un nuvo usuario en la app.
+Página que permite registrar un nuevo usuario en la app.
 
 __HomeComponent /__
 

@@ -43,19 +43,16 @@ function VideosItems({view, videoData }:any) {
 
     view == "videos"
         ?
-        <div className="video flex p-4 shadow-lg rounded-md border-default border-gray-200 bg-white transition ease-in-out hover:bg-gray-100">
-            <Link to={`/video/${_id}`} className="video__thumbnail relative flex w-2/5 max-w-xs  max-h-32" href="#">
-                <span className="absolute top-0 right-0 m-2 bg-c1 px-2 text-white text-sm rounded-md">
-                    {category}
-                </span>
+        <div className="video flex-row sm:flex p-4 shadow-lg rounded-md border-default border-gray-200 bg-white transition ease-in-out hover:bg-gray-100">
+            <Link to={`/video/${_id}`} className="video__thumbnail relative flex sm:w-2/5 max-w-sm  sm:max-h-32" href="#">
                 <span className="video-icon absolute w-full flex justify-center items-center h-full">
                     <img className="rounded-lg w-12" src={ScaleIcon} alt="icon" />
                 </span>
                 <img className="rounded-lg w-full" src={PosterVideo} alt={name} />
             </Link>
-            <div className="video__content w-3/5 px-4">
+            <div className="video__content sm:w-3/5 px-4">
                 <div className="video__option flex justify-between">
-                    <span className="m-1 bg-c1 p-1 text-white text-sm rounded-md">
+                    <span className="my-2 bg-c1 px-2 text-white text-sm rounded-md">
                         {category}
                     </span>
                     <span className="option-control flex justify-between">
