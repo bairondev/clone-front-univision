@@ -1,0 +1,26 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#00ffa1",
+        "activityBar.activeBorder": "#c460ff",
+        "activityBar.background": "#00ffa1",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#c460ff",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#00cc81",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#009961",
+        "titleBar.activeBackground": "#00cc81",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#00cc8199",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#00CC81",
+    "cSpell.words": [
+        "breadcrums",
+        "client",
+        "i",
+        "univisiontest",
+        "vite"
+    ]
+}
