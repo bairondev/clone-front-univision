@@ -57,6 +57,21 @@ Componente que permite crear un nuevo video.
 
 <br/>
 
+### `Components`
+<br/>
+
+__AuthController /__
+
+Componente para controlar el acceso a los usuarios.
+
+__UserControlle /__
+
+Componente para crear usuarios.
+
+__VideoControlle /__
+
+Componente que permite el CRUD de los videos.
+
 
 
 
