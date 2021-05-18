@@ -3,6 +3,12 @@ __`Author:` [@bairondev](https://github.com/bairondev/)__
 
 <br/>
 
+
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/app-video.jpg" width="450" />
+
+<br/>
+<br/>
+
 ### `Stack Technology`
 <br/>
 
@@ -52,31 +58,49 @@ Test mode `npm run test`
 ### `Components`
 <br/>
 
+
 __LoginComponent /__
+
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/login.png" width="300" />
+
 
 Página que permite ingresar a la app.
 
 __RegisterComponent /__
 
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/register.png" width="300" />
+
 Página que permite registrar un nuvo usuario en la app.
 
 __HomeComponent /__
+
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/home.png" width="300" />
 
 Página principal de la app.
 
 __VideosComponent /__
 
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/my-videos.png" width="300" />
+
+
 Vista con el listado de todos los videos ingresado por la app.
 
 __VideoComponent /__
+
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/video-player.png" width="300" />
 
 Vista del videoplayer del video seleccionado por el cliente.
 
 __VideoListComponent /__
 
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/my-videos.png" width="300" />
+
+
 Componente que carga el detalle de cada video.
 
 __UploadComponent /__
+
+<img src="https://raw.githubusercontent.com/bairondev/univision-test/main/client/preview/upload-video.png" width="300" />
 
 Componente que permite crear un nuevo video.
 
