@@ -1,0 +1,10 @@
+client/node_modules
+client/.gitignore
+client/src/Notes.md
+
+server/.vscode/settings.json
+Server/node_modules
+
+.DS_Store
+*.local
+.vercel

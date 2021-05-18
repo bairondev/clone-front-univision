@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+// @ts-ignore  
 import { ReactVideo } from "reactjs-media";
 
 import Breadcrumbs from '../layouts/breadcrumbs/breadcrumbs';

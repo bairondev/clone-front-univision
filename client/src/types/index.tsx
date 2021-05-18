@@ -17,7 +17,6 @@ export type AuthContextState = {
         msg: string,
     }, 
     load: boolean,
-    mobileMenu: boolean,
     userRegister: (data:object) => void,
     userAuthenticated: () => void,
     userSignOn: (data:object) => void,

@@ -40,6 +40,7 @@ const HomeComponent = () => {
             <Breadcrumbs
               name={"Home"}
               icon={Icon}
+              url=""
             />
 
 {

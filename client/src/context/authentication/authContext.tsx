@@ -12,7 +12,6 @@ const contextDefaultValues: AuthContextState = {
         msg: "",
     }, 
     load: true,
-    mobileMenu: false,
     userRegister: () =>{},
     userAuthenticated: () =>{},
     userSignOn: () =>{},
