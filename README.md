@@ -14,6 +14,39 @@ __`Author:` [@bairondev](https://github.com/bairondev/)__
 - HTML5
 - Sass
 
+
+### `💿 Installation Frontend`
+<br/>
+
+```bash
+$ npm install 
+# or
+$ yarn add npm-run-all --dev
+```
+
+- It requires `Node@>=4`.
+
+<br/>
+
+### `📖 Usage`
+<br/>
+
+```bash
+Developer mode `npm run dev` 
+```
+
+```bash
+Build mode `npm run build` 
+```
+
+```bash
+Serve mode `npm run serve` 
+```
+
+```bash
+Test mode `npm run test` 
+```
+
 <br/>
 
 ### `Components`

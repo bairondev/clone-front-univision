@@ -8,7 +8,7 @@ const Layout = (props:any) => {
     return(
         <> 
             <Header/>
-            <div className="bg-white pt-10 md:flex items-start object-contain bg-cover bg-right min-h-screen relative" style={{backgroundImage: `url(${Background})`}}>
+            <div className="bg-white py-10 md:flex items-start object-contain bg-cover bg-right min-h-screen relative" style={{backgroundImage: `url(${Background})`}}>
                 <div className="sidebar flex-none md:w-52">
                     <Sidebar/>
                 </div>        
