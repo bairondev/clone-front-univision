@@ -41,12 +41,6 @@ const VideoDelete = (props:any) => {
     }
   }
 
-  useEffect(() => {
-
-    videoData(props.match.params.id);
-
-  }, [videoLoad] );
-
   // delete video
   const deleteVideo = async (id:string) => {
     try {
@@ -63,6 +57,11 @@ const VideoDelete = (props:any) => {
     }
   }
 
+  useEffect(() => {
+
+    videoData(props.match.params.id);
+
+  }, [videoLoad] );
 
 
   return (
@@ -124,7 +123,7 @@ const VideoDelete = (props:any) => {
                                         <path d="M11,17V10a1,1,0,0,0-2,0v7a1,1,0,0,0,2,0Z"></path>
                                         <path d="M15,17V10a1,1,0,0,0-2,0v7a1,1,0,0,0,2,0Z"></path>
                                     </svg>
-                                    <h3 className="text-center">Video delete</h3>
+                                    <h3 className="text-center mt-8">Video deleted</h3>
                                 </div>
                             </div>
 

@@ -1,8 +1,15 @@
 import axios from 'axios';
 
-export const clientAxios = axios.create({
-    //baseURL : "http://localhost:4000"
-    baseURL : "https://univision-backend.herokuapp.com"
+let urlAPI;
+
+if ( window.location.hostname === 'localhost') {
+    urlAPI = "http://localhost:4000";
+}else{
+    urlAPI = "https://univision-backend.herokuapp.com";
+}
+
+export const clientAxios = axios.create({ 
+    baseURL: urlAPI 
 });
 
 export const cloudinaryAxios = axios.create({
