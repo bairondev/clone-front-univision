@@ -89,9 +89,10 @@ const AuthState = (props:any) => {
                 payload: response.data
             });
 
+           
+
             userAuthenticated();
         } catch (error) {
-
             console.log(error.response.data.msg);
             const alert = {
                 type: 'alert-error',

@@ -1,13 +1,14 @@
 import React, {useState,useContext} from 'react';
-import {Link} from 'react-router-dom';
-import AlertContext from '../../context/alert/alertContext';
+import {Link, Redirect } from 'react-router-dom';
 
 import Breadcrumbs from '../layouts/breadcrumbs/breadcrumbs';
+import LoadGif from '../../img/icons/load-video.gif';
 import MsnForm from '../utils/msnForm/msnForm';
 
+
+import AlertContext from '../../context/alert/alertContext';
 import {clientAxios, cloudinaryAxios } from '../../config/axios';
 
-import LoadGif from '../../img/icons/load-video.gif';
 
 const Icon  = <svg className="w-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 24 24" x="0px" y="0px">
                 <path d="M22,12a1,1,0,0,0-1,1v4.34A2.663,2.663,0,0,1,18.34,20H5.66A2.663,2.663,0,0,1,3,17.34V13a1,1,0,0,0-2,0v4.34A4.666,4.666,0,0,0,5.66,22H18.34A4.666,4.666,0,0,0,23,17.34V13A1,1,0,0,0,22,12Z"></path>
@@ -35,6 +36,8 @@ const Upload = ()=> {
 
   const [videoLoad, set_videoLoad] = useState(false);
   const [viewLoad, set_viewLoad] = useState(false);
+  const [success, success_set ]   = useState(true);
+  const [redirect, redirect_set ]       = useState(false);
 
   const onChange = (e:any) =>{
     e.preventDefault();
@@ -85,7 +88,11 @@ const Upload = ()=> {
         })
 
         set_videoLoad(false);
-        set_viewLoad(false);
+        success_set(false);
+
+        setTimeout(() => {
+            redirect_set( true );
+        }, 1200 )
 
     } catch (error) {
         console.log(error);
@@ -150,18 +157,41 @@ const Upload = ()=> {
           {
             viewLoad
               ?
-              <div className="loading-video bg-white" style={{minHeight: '70vh'}}>
-                <div className="flex-column justify-center items-center relative w-full">
-                  <div className="absolute z-10 w-full">
-                    <div className="absolute w-full">
-                      <p className="text-center text-c1 font-bold pt-10 mt-24">
-                        ...Uploading video...
-                      </p>
+            
+              success
+                  ?
+                <div className="loading-video bg-white" style={{minHeight: '70vh'}}>
+                  <div className="flex-column justify-center items-center relative w-full">
+                    <div className="absolute z-10 w-full">
+                      <div className="absolute w-full">
+                        <p className="text-center text-c1 font-bold pt-10 mt-24">
+                          ...Uploading video...
+                        </p>
+                      </div>
+                      <img className="min-w-lg mx-auto" src={LoadGif} alt="Load VIdeo" />
                     </div>
-                    <img className="min-w-lg mx-auto" src={LoadGif} alt="Load VIdeo" />
                   </div>
                 </div>
-              </div>
+
+                :
+
+                <>
+                  <div className="video__content flex justify-center">
+                    <div className="px-4 text-c2">
+                        <svg className="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 24 24" x="0px" y="0px">
+                          <path d="M22,12a1,1,0,0,0-1,1v4.34A2.663,2.663,0,0,1,18.34,20H5.66A2.663,2.663,0,0,1,3,17.34V13a1,1,0,0,0-2,0v4.34A4.666,4.666,0,0,0,5.66,22H18.34A4.666,4.666,0,0,0,23,17.34V13A1,1,0,0,0,22,12Z"></path>
+                          <path d="M6.707,9.707,11,5.414V16a1,1,0,0,0,2,0V5.414l4.293,4.293a1,1,0,0,0,1.414-1.414l-6-6a1,1,0,0,0-1.414,0l-6,6A1,1,0,0,0,6.707,9.707Z"></path>
+                        </svg>
+                        <h3 className="text-center">New video created</h3>
+                    </div>
+                  </div>
+
+                  {
+                  redirect
+                      ? ( <Redirect to="/my-videos" /> )
+                      : null
+                  }
+                </>
               :
               <div className="upload">
                 

@@ -109,7 +109,7 @@ const Login = (props:any)=> {
                                 : null
                         }
 
-                        <div className="mt-16 flex justify-between items-end">
+                        <div className="mt-6 md:mt-16  flex justify-between items-end">
 							<input 	type="submit"
 									value="Submit" 
 									className="bg-c2 cursor-pointer text-white text-xl font-bold shadow-md  rounded-md py-1 px-8 text-center" />

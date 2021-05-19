@@ -114,7 +114,7 @@ const Register = (props:any)=> {
                                     id="name"
                                     name="name"
                                     type="text" 
-                                    placeholder="Name"
+                                    placeholder="name"
 									value={name}
                                     onChange={onChange} />
                         </div>
@@ -125,7 +125,7 @@ const Register = (props:any)=> {
                                     id="email"
                                     name="email"
                                     type="text" 
-                                    placeholder="Name"
+                                    placeholder=" email"
 									value={email}
                                     onChange={onChange} />
                         </div>
@@ -136,7 +136,7 @@ const Register = (props:any)=> {
                                     id="password"
                                     name="password"
                                     type="password" 
-                                    placeholder="Password"
+                                    placeholder=" password"
 									value={password}
                                     onChange={onChange} />
                         </div>
@@ -147,7 +147,7 @@ const Register = (props:any)=> {
                                     id="password2"
                                     name="password2"
                                     type="password" 
-                                    placeholder="Password"
+                                    placeholder="confirm password"
 									value={password2}
                                     onChange={onChange} />
                         </div>
@@ -159,7 +159,7 @@ const Register = (props:any)=> {
                         }
                         
 
-                        <div className="mt-16 flex justify-between items-end">
+                        <div className="mt-6 md:mt-16 flex justify-between items-end">
 							<input 	type="submit"
 									value="Submit" 
 									className="bg-c2 cursor-pointer text-white text-xl font-bold shadow-md  rounded-md py-1 px-8 text-center" />

@@ -21,7 +21,7 @@ const HomeComponent = () => {
     try {
         const response = await clientAxios.get('/api/videos');
         videoLoad = true;
-      videos_set(response.data);
+        videos_set(response.data);
 
     } catch (error) {
         console.log(error);

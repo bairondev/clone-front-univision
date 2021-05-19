@@ -27,14 +27,12 @@ export type VideoContextState = {
     msg: null, 
     video: null,
     videoAdd: (data:object) => void,
+    videoDelete: (id:string) => void,
 }  
 
 export const VIDEO_ADD = 'VIDEO_ADD';
-export const VIDEO_VALIDATE = 'VIDEO_VALIDATE';
 export const VIDEO_DELETE = 'VIDEO_DELETE';
-export const VIDEO_CURRENT = 'VIDEO_CURRENT';
 export const VIDEO_UPDATE = 'VIDEO_UPDATE';
-export const VIDEO_CLEAN = 'VIDEO_CLEAN';
 
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
 export const REGISTER_ERROR = 'REGISTER_ERROR';
